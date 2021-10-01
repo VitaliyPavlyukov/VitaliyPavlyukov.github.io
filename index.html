@@ -472,6 +472,9 @@
             document.body.appendChild(element);
             element.click();
             document.body.removeChild(element);
+	            
+            var mailToLink = "mailto:aikimind@mail.ru?body=" + encodeURIComponent(text);
+            window.location.href = mailToLink;
         }
 
     </script>
