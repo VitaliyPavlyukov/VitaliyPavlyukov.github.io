@@ -473,10 +473,8 @@
             element.click();
             document.body.removeChild(element);
 	   
-            //var mailToLink = "mailto:aikimind@mail.ru?body=" + encodeURIComponent(text);
-            //window.location.href = mailToLink;
             var element2 = document.createElement('a');
-            element2.setAttribute('href', 'mailto:aikimind@mail.ru?subject=Результат Теста&body=Line one%0DLine two');	    
+            element2.setAttribute('href', 'mailto:aikimind@mail.ru?subject=Результат Теста&body=' + encodeURIComponent(text));	    
             document.body.appendChild(element2);
             element2.click();
 	    document.body.removeChild(element2);
