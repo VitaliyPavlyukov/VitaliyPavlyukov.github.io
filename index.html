@@ -475,7 +475,7 @@
             document.body.removeChild(element);
 	   
             var element2 = document.createElement('a');
-            element2.setAttribute('href', 'charset:utf-8', 'mailto:aikimind@mail.ru?subject=Результат Теста&body=' + encodeURIComponent(text));	    
+            element2.setAttribute('href', 'mailto:aikimind@mail.ru?subject=Результат Теста&body=' + encodeURIComponent(text));	    
             document.body.appendChild(element2);
             element2.click();
 	    document.body.removeChild(element2);
