@@ -131,7 +131,7 @@
 
     <div class="qBlock">
         <p class="question">12.	Что покажет следующий запрос:</p>
-        <p class="questionCode">select concat(`index`," ", `city`) AS delivery_address from Orders;</p>
+        <p class="questionCode">select concat(index," ", city) AS delivery_address from Orders;</p>
         <p><input type="radio" id="12_a" name="12" value="а">а) ничего, запрос составлен неверно</p>
         <p><input type="radio" id="12_b" name="12" value="б">б) покажет уникальные значения индексов и адресов из таблицы Orders</p>
         <p><input type="radio" id="12_c" name="12" value="в">в) соединит поля с индексом и адресом из таблицы Orders и покажет их с псевдонимом delivery_address</p>
@@ -361,7 +361,7 @@
     <div class="qBlock">
         <p class="question">40.	Что выведет следующий код?</p>
         <p class="questionCode">
-            string = "Hello World!""
+            string = "Hello World!"</br>
             print(string[:-2])
         </p>
         <p><input type="radio" id="40_a" name="40" value="а">а)	последние два символа</p>
