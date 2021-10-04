@@ -455,7 +455,7 @@
             for (i = 0; i < inputs.length; i++) {
                 if (inputs[i].type == 'text' && inputs[i].id == "userName") {
                     text = text + "user:" + inputs[i].value;
-		    text = text.replace(/,/g," ") + ",";
+		    text = text.replace(/,/g," ").trim() + ",";
                 }
 
                 if (inputs[i].type == 'radio' && inputs[i].checked) {
