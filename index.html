@@ -453,9 +453,9 @@
             var text = "";
             var inputs = document.getElementsByTagName('input');
             for (i = 0; i < inputs.length; i++) {
-                if (inputs[i].type == 'text' && inputs[i].id == "userName") {
+                if (inputs[i].type == 'text' && inputs[i].id == 'userName') {
                     text = text + 'user:' + inputs[i].value;
-		    text = text.replace(","," ") + ",";
+		    text = text.replaceAll(","," ") + ",";
                 }
 
                 if (inputs[i].type == 'radio' && inputs[i].checked) {
