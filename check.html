@@ -519,7 +519,7 @@
             resultHTML = "<div class='title'>Результаты теста \"Базовый тест ИТ навыков SQL и Python\"</div>"
             resultHTML = resultHTML + "<p>" + "Экзаменуемый: " + answers[0].replace("user:","") + "</p>"
             resultHTML = resultHTML + "<p>" + "Правильных ответов:" + (etalons.length - diffs.length - 2) + "</p>"
-            resultHTML = resultHTML + "<p>" + "Неправильных ответов:" + (diffs.length) + "</p>"
+            resultHTML = resultHTML + "<p>" + "Неправильных ответов:" + (diffs.length - 1) + "</p>"
             resultHTML = resultHTML + "</br>"
 
             for (var i = 0; i < diffs.length; i++) {
