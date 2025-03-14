@@ -44,7 +44,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">2.Что такое реляционные базы данных:</p>
+        <p class="question">2. Что такое реляционные базы данных:</p>
         <p><input type="radio" id="2_a" name="2" value="а">а) База данных, в которой информация хранится в виде двумерных таблиц, связанных между собой</p>
         <p><input type="radio" id="2_b" name="2" value="б">б) База данных, в которой одна ни с чем не связанная таблица</p>
         <p><input type="radio" id="2_c" name="2" value="в">в) Любая база данных - реляционная</p>
@@ -52,7 +52,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">3.Как выглядит запрос, для вывода ВСЕХ значений из таблицы Orders:</p>
+        <p class="question">3. Как выглядит запрос, для вывода ВСЕХ значений из таблицы Orders:</p>
         <p><input type="radio" id="3_a" name="3" value="а">а) select ALL from Orders;</p>
         <p><input type="radio" id="3_b" name="3" value="б">б) select % from Orders;</p>
         <p><input type="radio" id="3_c" name="3" value="в">в) select * from Orders;</p>
@@ -60,7 +60,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">4.Какие данные мы получим из этого запроса?</p>
+        <p class="question">4. Какие данные мы получим из этого запроса?</p>
         <p class="questionCode">select id, date, customer_name from Orders;</p>
         <p><input type="radio" id="4_a" name="4" value="а">а) Неотсортированные номера и даты всех заказов с именами заказчиков</p>
         <p><input type="radio" id="4_b" name="4" value="б">б) Никакие, запрос составлен неверно</p>
@@ -69,7 +69,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">5.Есть ли ошибка в запросе?</p>
+        <p class="question">5. Есть ли ошибка в запросе?</p>
         <p class="questionCode">select id, date, customer_name from Orders where customer_name = Mike;</p>
         <p><input type="radio" id="5_a" name="5" value="а">а) Есть ли ошибка в запросе?</p>
         <p><input type="radio" id="5_b" name="5" value="б">б) Mike необходимо записать в кавычках 'Mike'</p>
@@ -78,7 +78,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">6.Что покажет следующий запрос:</p>
+        <p class="question">6. Что покажет следующий запрос:</p>
         <p class="questionCode">select * from Orders where date between '2017-01-01' and '2017-12-31'</p>
         <p><input type="radio" id="6_a" name="6" value="а">а) Все данные по заказам, совершенным за 2017 год, за исключением 01 января 2017 года</p>
         <p><input type="radio" id="6_b" name="6" value="б">б) Все данные по заказам, совершенным за 2017 год, за исключением 31 декабря 2017 года</p>
@@ -87,7 +87,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">7.Что не так с этим запросом</p>
+        <p class="question">7. Что не так с этим запросом?</p>
         <p class="questionCode">select id, date from Orders where seller_id = NULL;</p>
         <p><input type="radio" id="7_a" name="7" value="а">а) Все верно, запрос покажет все заказы, продавцы которых не проставлены</p>
         <p><input type="radio" id="7_b" name="7" value="б">б) NULL нужно взять в кавычки</p>
@@ -96,7 +96,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">8.Порядок выполнения операторов AND и OR следующий:</p>
+        <p class="question">8. Порядок выполнения операторов AND и OR следующий:</p>
         <p><input type="radio" id="8_a" name="8" value="а">а) Сначала выполняется AND, а затем OR</p>
         <p><input type="radio" id="8_b" name="8" value="б">б) Сначала выполняется OR, а затем AND</p>
         <p><input type="radio" id="8_c" name="8" value="в">в) Порядок выполнения операторов AND и OR зависит от того, какой операторов стоит первым</p>
@@ -104,7 +104,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">9.Что покажет следующий запрос:</p>
+        <p class="question">9. Что покажет следующий запрос:</p>
         <p class="questionCode">select DISTINCT seller_id order by seller_id from Orders;</p>
         <p><input type="radio" id="9_a" name="9" value="а">а) Уникальные ID продавцов, отсортированные по возрастанию</p>
         <p><input type="radio" id="9_b" name="9" value="б">б) Уникальные ID продавцов, отсортированные по убыванию</p>
@@ -113,7 +113,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">10.Что делает спецсимвол '_' в паре с оператором LIKE:</p>
+        <p class="question">10. Что делает спецсимвол '_' в паре с оператором LIKE:</p>
         <p class="questionCode">select * from Orders where customer_name like 'mik_';</p>
         <p><input type="radio" id="10_a" name="10" value="а">а) найдет все имена, которые начинаются на mik и состоят из 4 символов</p>
         <p><input type="radio" id="10_b" name="10" value="б">б) найдет все имена, которые начинаются на mik, вне зависимости от того, из какого количества символов они состоят</p>
@@ -122,7 +122,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">11.Выберите корректный пример использования функции CONCAT:</p>
+        <p class="question">11. Выберите корректный пример использования функции CONCAT:</p>
         <p><input type="radio" id="11_a" name="11" value="а">а) select concat = index and city from Orders;</p>
         <p><input type="radio" id="11_b" name="11" value="б">б) select concat IN (`index`, `city`) from Orders;</p>
         <p><input type="radio" id="11_c" name="11" value="в">в) select concat(`index`," ", `city`) from Orders;</p>
@@ -139,7 +139,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">13.Выберите правильный пример использования функции округления ROUND</p>
+        <p class="question">13. Выберите правильный пример использования функции округления ROUND</p>
         <p><input type="radio" id="13_a" name="13" value="а">а) select id, price * discount AS total price from Orders ROUND (2);</p>
         <p><input type="radio" id="13_b" name="13" value="б">б) select id, price * discount ROUND (2) AS total price from Orders;</p>
         <p><input type="radio" id="13_c" name="13" value="в">в) select id, ROUND (price * discount, 2) AS total price from Orders;</p>
@@ -147,7 +147,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">14.Что покажет следующий запрос: select id from Orders where year (date) > 2018;</p>
+        <p class="question">14. Что покажет следующий запрос: select id from Orders where year (date) > 2018;</p>
         <p><input type="radio" id="14_a" name="14" value="а">а) номера заказов, сделанных до 2018 года</p>
         <p><input type="radio" id="14_b" name="14" value="б">б) номера заказов, сделанных в 2018 году</p>
         <p><input type="radio" id="14_c" name="14" value="в">в) уникальные номера заказов</p>
@@ -163,7 +163,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">16.Что такое агрегирующие функции:</p>
+        <p class="question">16. Что такое агрегирующие функции:</p>
         <p><input type="radio" id="16_a" name="16" value="а">а) функции, которые фильтруют значения</p>
         <p><input type="radio" id="16_b" name="16" value="б">б)	функции, которые сортируют значения</p>
         <p><input type="radio" id="16_c" name="16" value="в">в) функции, которые работают с набором данных, превращая их в одно итоговое значение</p>
@@ -171,7 +171,7 @@
     </div>
 
     <div class="qBlock">
-        <p class="question">17.Выберите пример правильно составленного запроса с использованием агрегирующей функции SUM:</p>
+        <p class="question">17. Выберите пример правильно составленного запроса с использованием агрегирующей функции SUM:</p>
         <p><input type="radio" id="17_a" name="17" value="а">а)	select sum(price) from Orders;</p>
         <p><input type="radio" id="17_b" name="17" value="б">б)	select sum(price), customer_name from Orders;</p>
         <p><input type="radio" id="17_c" name="17" value="в">в)	select * from Orders where price=sum();</p>
