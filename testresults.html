@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Результаты Базового теста ИТ навыков SQL и Python</title>
+    <style>
+        .title {
+            font-weight: bold;
+            font-size:larger;
+        }
+        .question {
+            font-weight:bold;
+        }
+        .questionCode {
+            font-weight: bold;
+            font-style:italic;
+        }
+        .qBlock {
+            margin-top:30px;
+        }
+        .info {
+            margin-top: 30px;
+        }
+        .textInput {
+            width:100%;
+        }
+    </style>  
+	
+</head>
+<body>
+<div>
+   
+    </div>
+
+    <script>
+
+        function getCheckedValue() {
+            var text = "";
+            var inputs = document.getElementsByTagName('input');
+            for (i = 0; i < inputs.length; i++) {
+                if (inputs[i].type == 'text') {
+                    text = text + 'user:' + inputs[i].value + ",";
+                }
+
+                if (inputs[i].type == 'radio' && inputs[i].checked) {
+                    text = text + inputs[i].name + ":" + inputs[i].value + ",";
+                }
+            }
+            return text;
+        }
+
+        function saveResult() {
+            var text = getCheckedValue();
+            var element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', 'result');
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+
+        function checkResult() {
+            var etalonText = document.getElementById('etalon').value;
+            var answerText = document.getElementById('answer').value;
+            var result = document.getElementById('result');
+
+            var etalons = etalonText.split(',');
+            var answers = answerText.split(',');
+            var diffs = []
+
+            for (var i = 0; i < answers.length; i++) {
+		if (answers[i].startsWith("user")) {
+	            continue;
+		}
+		    
+                if (etalons.indexOf(answers[i]) === -1) {
+                    diffs.push(answers[i]);
+                }
+            }
+	
+	    var etalonsNumbers = []
+	    for (var i = 0; i < etalons.length; i++){
+	        etalonsNumbers.push(etalons[i].split(":")[0]);
+	    }
+		
+            var answersNumbers = []
+	    for (var i = 0; i < answers.length; i++){
+	        answersNumbers.push(answers[i].split(":")[0]);
+	    }
+		
+	    var diffsNotChecked = []
+	    for (var i = 0; i < etalonsNumbers.length; i++) {
+		if (answersNumbers.indexOf(etalonsNumbers[i]) === -1) {
+	    	    diffsNotChecked.push(etalonsNumbers[i]);
+		}
+	    }	
+		
+	    var inputs = document.getElementsByTagName('input');
+
+            var resultHTML = "";
+                        
+            resultHTML = "<div class='title'>Результаты теста \"Базовый тест ИТ навыков SQL и Python\"</div>"
+            resultHTML = resultHTML + "<p>" + "Экзаменуемый: " + answers[0].replace("user:","") + "</p>"
+            resultHTML = resultHTML + "<p>" + "Правильных ответов:" + (etalons.length - 2 - diffsNotChecked.length - diffs.length) + "</p>"
+	    resultHTML = resultHTML + "<p>" + "Пропущенные вопросы:" + (diffsNotChecked.length) + "</p>"
+            resultHTML = resultHTML + "<p>" + "Неправильных ответов:" + (diffs.length) + "</p>"
+	    resultHTML = resultHTML + "</br>"
+
+            for (var i = 0; i < diffs.length; i++) {
+                for (k = 0; k < inputs.length; k++) {
+
+                    if (inputs[k].type == 'radio' && inputs[k].name + ":" + inputs[k].value == diffs[i]) {                        
+                        resultHTML = resultHTML
+                            + "<p class='question'>" + inputs[k].parentElement.parentElement.getElementsByClassName('question')[0].innerText + "</p>"
+                            + "<p>" + inputs[k].parentElement.innerText + "</p>";
+                        break;
+                    }
+                }
+            }
+
+            result.innerHTML = resultHTML;
+        }
+
+    </script>
+
+</body>
+</html>
