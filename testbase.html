@@ -427,7 +427,8 @@
         <button onclick="saveResult()">Сохранить результат</button>
     </div>    
     <div>
-        <label class="labelResultText">Выбранные ответы:</label><br>
+        <br><label class="labelResultText">Выбранные ответы:</label><br>
+        <button onclick="copyClipboardResultText()">Скопировать</button><br><br>
         <textarea id="resultText" class="qResultTextarea"></textarea>
     </div>
 
@@ -466,6 +467,13 @@
             document.body.appendChild(element2);
             element2.click();
 	        document.body.removeChild(element2);
+        }
+
+        function copyClipboardResultText() {
+            var copyText = document.getElementById("resultText");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            navigator.clipboard.writeText(copyText.value);
         }
 
     </script>
