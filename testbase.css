@@ -5,6 +5,20 @@ body {
     font-size: 26px;
 }
 
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .title {
     font-weight: bold;
     font-size: larger;
@@ -18,7 +32,7 @@ body {
     min-height: 30px;
     padding-top: 10px;
     vertical-align: middle;
-    width: 590px;
+    width: 790px;
     border-radius: 10px;
 }
 
@@ -34,7 +48,7 @@ body {
     margin-top:30px;
     margin-left:30px;
     background-color: #4292c4;
-    width: 600px;
+    width: 800px;
     padding-left: 2px;
     padding-right: 2px;
     padding-bottom: 5px;
@@ -79,8 +93,8 @@ button:hover {
 }
 
 .qResultTextarea {
-    width: 600px; 
-    min-width: 600px;
+    width: 800px; 
+    min-width: 800px;
     margin-left: 30px;  
     padding-bottom: 30px;
     border-radius: 10px;
@@ -122,5 +136,5 @@ input[type=radio]:empty + label {
 .styled-input-single {
     position: relative;
     display: inline-flex;
-    min-width: 590px;    
+    min-width: 790px;    
 }
