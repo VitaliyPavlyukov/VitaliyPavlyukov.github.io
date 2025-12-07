@@ -32,19 +32,19 @@ body {
 .question {
     font-weight:bold;
     background-color: #3c8dbf;
-    padding-left: 10px;
+    padding-left: 30px;
     min-height: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     vertical-align: middle;
-    width: 790px;
+    width: 770px;
     border-radius: 10px;
 }
 
 .questionCode {
     font-weight: bold;
     font-style:italic;
-    padding-left: 0px;
+    padding-left: 30px;
     padding-right: 5px;
     border-radius: 10px;
 }
