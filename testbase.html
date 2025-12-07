@@ -9,7 +9,7 @@
     <div class="title">Базовый тест ИТ навыков SQL и Python</div>
 
     <div class="info">
-        <label for="userName">Введите свое имя</label>
+        <label for="userName">Введите свое имя:</label>
         <input type="text" id="userName" />
     </div>
 
@@ -17,325 +17,325 @@
 
     <div class="qBlock">
         <p class="question">1. Что такое SQL?</p>
-        <p><input type="radio" id="1_a" name="1" value="а">а) SQL – это язык запросов к базе данных</p>
-        <p><input type="radio" id="1_b" name="1" value="б">б) SQL – это база данных</p>
-        <p><input type="radio" id="1_c" name="1" value="в">в) SQL – это база данных и язык программирования</p>
-        <p><input type="radio" id="1_d" name="1" value="г">г) SQL – это язык программирования</p>
+        <div class="styled-input-single"><input type="radio" id="1_a" name="1" value="а"><label for="1_a">а) SQL – это язык запросов к базе данных</label></div>
+        <div class="styled-input-single"><input type="radio" id="1_b" name="1" value="б"><label for="1_b">б) SQL – это база данных</label></div>
+        <div class="styled-input-single"><input type="radio" id="1_c" name="1" value="в"><label for="1_c">в) SQL – это база данных и язык программирования</label></div>
+        <div class="styled-input-single"><input type="radio" id="1_d" name="1" value="г"><label for="1_d">г) SQL – это язык программирования</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">2. Что такое реляционные базы данных:</p>
-        <p><input type="radio" id="2_a" name="2" value="а">а) База данных, в которой информация хранится в виде двумерных таблиц, связанных между собой</p>
-        <p><input type="radio" id="2_b" name="2" value="б">б) База данных, в которой одна ни с чем не связанная таблица</p>
-        <p><input type="radio" id="2_c" name="2" value="в">в) Любая база данных - реляционная</p>
-        <p><input type="radio" id="2_d" name="2" value="г">г) Совокупность данных, не связанных между собой</p>
+        <div class="styled-input-single"><input type="radio" id="2_a" name="2" value="а"><label for="2_a">а) База данных, в которой информация хранится в виде двумерных таблиц, связанных между собой</label></div>
+        <div class="styled-input-single"><input type="radio" id="2_b" name="2" value="б"><label for="2_b">б) База данных, в которой одна ни с чем не связанная таблица</label></div>
+        <div class="styled-input-single"><input type="radio" id="2_c" name="2" value="в"><label for="2_c">в) Любая база данных - реляционная</label></div>
+        <div class="styled-input-single"><input type="radio" id="2_d" name="2" value="г"><label for="2_d">г) Совокупность данных, не связанных между собой</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">3. Как выглядит запрос, для вывода ВСЕХ значений из таблицы Orders:</p>
-        <p><input type="radio" id="3_a" name="3" value="а">а) select ALL from Orders;</p>
-        <p><input type="radio" id="3_b" name="3" value="б">б) select % from Orders;</p>
-        <p><input type="radio" id="3_c" name="3" value="в">в) select * from Orders;</p>
-        <p><input type="radio" id="3_d" name="3" value="г">г) select *.Orders from Orders;</p>
+        <div class="styled-input-single"><input type="radio" id="3_a" name="3" value="а"><label for="3_a">а) select ALL from Orders;</label></div>
+        <div class="styled-input-single"><input type="radio" id="3_b" name="3" value="б"><label for="3_b">б) select % from Orders;</label></div>
+        <div class="styled-input-single"><input type="radio" id="3_c" name="3" value="в"><label for="3_c">в) select * from Orders;</label></div>
+        <div class="styled-input-single"><input type="radio" id="3_d" name="3" value="г"><label for="3_d">г) select *.Orders from Orders;</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">4. Какие данные мы получим из этого запроса?</p>
         <p class="questionCode">select id, date, customer_name from Orders;</p>
-        <p><input type="radio" id="4_a" name="4" value="а">а) Неотсортированные номера и даты всех заказов с именами заказчиков</p>
-        <p><input type="radio" id="4_b" name="4" value="б">б) Никакие, запрос составлен неверно</p>
-        <p><input type="radio" id="4_c" name="4" value="в">в) Номера и даты всех заказов с именами заказчиков, отсортированные по первой колонке</p>
-        <p><input type="radio" id="4_d" name="4" value="г">г) Номера и даты всех заказов с именами заказчиков, отсортированные по всем колонкам, содержащим слово Order</p>
+        <div class="styled-input-single"><input type="radio" id="4_a" name="4" value="а"><label for="4_a">а) Неотсортированные номера и даты всех заказов с именами заказчиков</label></div>
+        <div class="styled-input-single"><input type="radio" id="4_b" name="4" value="б"><label for="4_b">б) Никакие, запрос составлен неверно</label></div>
+        <div class="styled-input-single"><input type="radio" id="4_c" name="4" value="в"><label for="4_c">в) Номера и даты всех заказов с именами заказчиков, отсортированные по первой колонке</label></div>
+        <div class="styled-input-single"><input type="radio" id="4_d" name="4" value="г"><label for="4_d">г) Номера и даты всех заказов с именами заказчиков, отсортированные по всем колонкам, содержащим слово Order</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">5. Есть ли ошибка в запросе?</p>
         <p class="questionCode">select id, date, customer_name from Orders where customer_name = Mike;</p>
-        <p><input type="radio" id="5_a" name="5" value="а">а) Есть ли ошибка в запросе?</p>
-        <p><input type="radio" id="5_b" name="5" value="б">б) Mike необходимо записать в кавычках 'Mike'</p>
-        <p><input type="radio" id="5_c" name="5" value="в">в) Нужно убрать лишние поля из запроса</p>
-        <p><input type="radio" id="5_d" name="5" value="г">г) Строчку с where поменять местами с from</p>
+        <div class="styled-input-single"><input type="radio" id="5_a" name="5" value="а"><label for="5_a">а) Есть ли ошибка в запросе?</label></div>
+        <div class="styled-input-single"><input type="radio" id="5_b" name="5" value="б"><label for="5_b">б) Mike необходимо записать в кавычках 'Mike'</label></div>
+        <div class="styled-input-single"><input type="radio" id="5_c" name="5" value="в"><label for="5_c">в) Нужно убрать лишние поля из запроса</label></div>
+        <div class="styled-input-single"><input type="radio" id="5_d" name="5" value="г"><label for="5_d">г) Строчку с where поменять местами с from</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">6. Что покажет следующий запрос:</p>
         <p class="questionCode">select * from Orders where date between '2017-01-01' and '2017-12-31'</p>
-        <p><input type="radio" id="6_a" name="6" value="а">а) Все данные по заказам, совершенным за 2017 год, за исключением 01 января 2017 года</p>
-        <p><input type="radio" id="6_b" name="6" value="б">б) Все данные по заказам, совершенным за 2017 год, за исключением 31 декабря 2017 года</p>
-        <p><input type="radio" id="6_c" name="6" value="в">в) Все данные по заказам, совершенным за 2017 год</p>
-        <p><input type="radio" id="6_d" name="6" value="г">г) Ничего, запрос составлен неверно</p>
+        <div class="styled-input-single"><input type="radio" id="6_a" name="6" value="а"><label for="6_a">а) Все данные по заказам, совершенным за 2017 год, за исключением 01 января 2017 года</label></div>
+        <div class="styled-input-single"><input type="radio" id="6_b" name="6" value="б"><label for="6_b">б) Все данные по заказам, совершенным за 2017 год, за исключением 31 декабря 2017 года</label></div>
+        <div class="styled-input-single"><input type="radio" id="6_c" name="6" value="в"><label for="6_c">в) Все данные по заказам, совершенным за 2017 год</label></div>
+        <div class="styled-input-single"><input type="radio" id="6_d" name="6" value="г"><label for="6_d">г) Ничего, запрос составлен неверно</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">7. Что не так с этим запросом?</p>
         <p class="questionCode">select id, date from Orders where seller_id = NULL;</p>
-        <p><input type="radio" id="7_a" name="7" value="а">а) Все верно, запрос покажет все заказы, продавцы которых не проставлены</p>
-        <p><input type="radio" id="7_b" name="7" value="б">б) NULL нужно взять в кавычки</p>
-        <p><input type="radio" id="7_c" name="7" value="в">в) Сравнение с NULL можно проводить только с оператором IS</p>
-        <p><input type="radio" id="7_d" name="7" value="г">г) Сравнение с NULL можно проводить только с оператором ON</p>
+        <div class="styled-input-single"><input type="radio" id="7_a" name="7" value="а"><label for="7_a">а) Все верно, запрос покажет все заказы, продавцы которых не проставлены</label></div>
+        <div class="styled-input-single"><input type="radio" id="7_b" name="7" value="б"><label for="7_b">б) NULL нужно взять в кавычки</label></div>
+        <div class="styled-input-single"><input type="radio" id="7_c" name="7" value="в"><label for="7_c">в) Сравнение с NULL можно проводить только с оператором IS</label></div>
+        <div class="styled-input-single"><input type="radio" id="7_d" name="7" value="г"><label for="7_d">г) Сравнение с NULL можно проводить только с оператором ON</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">8. Порядок выполнения операторов AND и OR следующий:</p>
-        <p><input type="radio" id="8_a" name="8" value="а">а) Сначала выполняется AND, а затем OR</p>
-        <p><input type="radio" id="8_b" name="8" value="б">б) Сначала выполняется OR, а затем AND</p>
-        <p><input type="radio" id="8_c" name="8" value="в">в) Порядок выполнения операторов AND и OR зависит от того, какой операторов стоит первым</p>
-        <p><input type="radio" id="8_d" name="8" value="г">г) Операторы AND и OR выполняются одновременно</p>
+        <div class="styled-input-single"><input type="radio" id="8_a" name="8" value="а"><label for="8_a">а) Сначала выполняется AND, а затем OR</label></div>
+        <div class="styled-input-single"><input type="radio" id="8_b" name="8" value="б"><label for="8_b">б) Сначала выполняется OR, а затем AND</label></div>
+        <div class="styled-input-single"><input type="radio" id="8_c" name="8" value="в"><label for="8_c">в) Порядок выполнения операторов AND и OR зависит от того, какой операторов стоит первым</label></div>
+        <div class="styled-input-single"><input type="radio" id="8_d" name="8" value="г"><label for="8_d">г) Операторы AND и OR выполняются одновременно</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">9. Что покажет следующий запрос:</p>
         <p class="questionCode">select DISTINCT seller_id order by seller_id from Orders;</p>
-        <p><input type="radio" id="9_a" name="9" value="а">а) Уникальные ID продавцов, отсортированные по возрастанию</p>
-        <p><input type="radio" id="9_b" name="9" value="б">б) Уникальные ID продавцов, отсортированные по убыванию</p>
-        <p><input type="radio" id="9_c" name="9" value="в">в) Ничего, запрос составлен неверно, ORDER BY всегда ставится в конце запроса</p>
-        <p><input type="radio" id="9_d" name="9" value="г">г) Неотсортированные никак уникальные ID продавцов</p>
+        <div class="styled-input-single"><input type="radio" id="9_a" name="9" value="а"><label for="9_a">а) Уникальные ID продавцов, отсортированные по возрастанию</label></div>
+        <div class="styled-input-single"><input type="radio" id="9_b" name="9" value="б"><label for="9_b">б) Уникальные ID продавцов, отсортированные по убыванию</label></div>
+        <div class="styled-input-single"><input type="radio" id="9_c" name="9" value="в"><label for="9_c">в) Ничего, запрос составлен неверно, ORDER BY всегда ставится в конце запроса</label></div>
+        <div class="styled-input-single"><input type="radio" id="9_d" name="9" value="г"><label for="9_d">г) Неотсортированные никак уникальные ID продавцов</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">10. Что делает спецсимвол '_' в паре с оператором LIKE:</p>
         <p class="questionCode">select * from Orders where customer_name like 'mik_';</p>
-        <p><input type="radio" id="10_a" name="10" value="а">а) найдет все имена, которые начинаются на mik и состоят из 4 символов</p>
-        <p><input type="radio" id="10_b" name="10" value="б">б) найдет все имена, которые начинаются на mik, вне зависимости от того, из какого количества символов они состоят</p>
-        <p><input type="radio" id="10_c" name="10" value="в">в) найдет данные, где имя равно mik</p>
-        <p><input type="radio" id="10_d" name="10" value="г">г) запрос составлен неверно, в паре с оператором like не используются спецсимволы</p>
+        <div class="styled-input-single"><input type="radio" id="10_a" name="10" value="а"><label for="10_a">а) найдет все имена, которые начинаются на mik и состоят из 4 символов</label></div>
+        <div class="styled-input-single"><input type="radio" id="10_b" name="10" value="б"><label for="10_b">б) найдет все имена, которые начинаются на mik, вне зависимости от того, из какого количества символов они состоят</label></div>
+        <div class="styled-input-single"><input type="radio" id="10_c" name="10" value="в"><label for="10_c">в) найдет данные, где имя равно mik</label></div>
+        <div class="styled-input-single"><input type="radio" id="10_d" name="10" value="г"><label for="10_d">г) запрос составлен неверно, в паре с оператором like не используются спецсимволы</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">11. Выберите корректный пример использования функции CONCAT:</p>
-        <p><input type="radio" id="11_a" name="11" value="а">а) select concat = index and city from Orders;</p>
-        <p><input type="radio" id="11_b" name="11" value="б">б) select concat IN (`index`, `city`) from Orders;</p>
-        <p><input type="radio" id="11_c" name="11" value="в">в) select concat(`index`," ", `city`) from Orders;</p>
-        <p><input type="radio" id="11_d" name="11" value="г">г) нет правильного примера</p>
+        <div class="styled-input-single"><input type="radio" id="11_a" name="11" value="а"><label for="11_a">а) select concat = index and city from Orders;</label></div>
+        <div class="styled-input-single"><input type="radio" id="11_b" name="11" value="б"><label for="11_b">б) select concat IN (`index`, `city`) from Orders;</label></div>
+        <div class="styled-input-single"><input type="radio" id="11_c" name="11" value="в"><label for="11_c">в) select concat(`index`," ", `city`) from Orders;</label></div>
+        <div class="styled-input-single"><input type="radio" id="11_d" name="11" value="г"><label for="11_d">г) нет правильного примера</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">12.	Что покажет следующий запрос:</p>
         <p class="questionCode">select concat(index," ", city) AS delivery_address from Orders;</p>
-        <p><input type="radio" id="12_a" name="12" value="а">а) ничего, запрос составлен неверно</p>
-        <p><input type="radio" id="12_b" name="12" value="б">б) покажет уникальные значения индексов и адресов из таблицы Orders</p>
-        <p><input type="radio" id="12_c" name="12" value="в">в) соединит поля с индексом и адресом из таблицы Orders и покажет их с псевдонимом delivery_address</p>
-        <p><input type="radio" id="12_d" name="12" value="г">г) соединит поля с индексом и адресом из таблицы Orders, но покажет их без псевдонима</p>
+        <div class="styled-input-single"><input type="radio" id="12_a" name="12" value="а"><label for="12_a">а) ничего, запрос составлен неверно</label></div>
+        <div class="styled-input-single"><input type="radio" id="12_b" name="12" value="б"><label for="12_b">б) покажет уникальные значения индексов и адресов из таблицы Orders</label></div>
+        <div class="styled-input-single"><input type="radio" id="12_c" name="12" value="в"><label for="12_c">в) соединит поля с индексом и адресом из таблицы Orders и покажет их с псевдонимом delivery_address</label></div>
+        <div class="styled-input-single"><input type="radio" id="12_d" name="12" value="г"><label for="12_d">г) соединит поля с индексом и адресом из таблицы Orders, но покажет их без псевдонима</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">13. Выберите правильный пример использования функции округления ROUND</p>
-        <p><input type="radio" id="13_a" name="13" value="а">а) select id, price * discount AS total price from Orders ROUND (2);</p>
-        <p><input type="radio" id="13_b" name="13" value="б">б) select id, price * discount ROUND (2) AS total price from Orders;</p>
-        <p><input type="radio" id="13_c" name="13" value="в">в) select id, ROUND (price * discount, 2) AS total price from Orders;</p>
-        <p><input type="radio" id="13_d" name="13" value="г">г) нет правильного примера</p>
+        <div class="styled-input-single"><input type="radio" id="13_a" name="13" value="а"><label for="13_a">а) select id, price * discount AS total price from Orders ROUND (2);</label></div>
+        <div class="styled-input-single"><input type="radio" id="13_b" name="13" value="б"><label for="13_b">б) select id, price * discount ROUND (2) AS total price from Orders;</label></div>
+        <div class="styled-input-single"><input type="radio" id="13_c" name="13" value="в"><label for="13_c">в) select id, ROUND (price * discount, 2) AS total price from Orders;</label></div>
+        <div class="styled-input-single"><input type="radio" id="13_d" name="13" value="г"><label for="13_d">г) нет правильного примера</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">14. Что покажет следующий запрос: select id from Orders where year (date) > 2018;</p>
-        <p><input type="radio" id="14_a" name="14" value="а">а) номера заказов, сделанных до 2018 года</p>
-        <p><input type="radio" id="14_b" name="14" value="б">б) номера заказов, сделанных в 2018 году</p>
-        <p><input type="radio" id="14_c" name="14" value="в">в) уникальные номера заказов</p>
-        <p><input type="radio" id="14_d" name="14" value="г">г) номера заказов, сделанных после 2018 года</p>
+        <div class="styled-input-single"><input type="radio" id="14_a" name="14" value="а"><label for="14_a">а) номера заказов, сделанных до 2018 года</label></div>
+        <div class="styled-input-single"><input type="radio" id="14_b" name="14" value="б"><label for="14_b">б) номера заказов, сделанных в 2018 году</label></div>
+        <div class="styled-input-single"><input type="radio" id="14_c" name="14" value="в"><label for="14_c">в) уникальные номера заказов</label></div>
+        <div class="styled-input-single"><input type="radio" id="14_d" name="14" value="г"><label for="14_d">г) номера заказов, сделанных после 2018 года</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">15.	Для чего используется LIMIT: select * from Orders limit 10;</p>
-        <p><input type="radio" id="15_a" name="15" value="а">а) необходим, чтобы показать все заказы, содержащие цифру 10</p>
-        <p><input type="radio" id="15_b" name="15" value="б">б) необходим, чтобы показать первых 10 записей в запросе</p>
-        <p><input type="radio" id="15_c" name="15" value="в">в) необходим, чтобы показать рандомные 10 записей в запрос</p>
-        <p><input type="radio" id="15_d" name="15" value="г">г) не существует такого оператора</p>
+        <div class="styled-input-single"><input type="radio" id="15_a" name="15" value="а"><label for="15_a">а) необходим, чтобы показать все заказы, содержащие цифру 10</label></div>
+        <div class="styled-input-single"><input type="radio" id="15_b" name="15" value="б"><label for="15_b">б) необходим, чтобы показать первых 10 записей в запросе</label></div>
+        <div class="styled-input-single"><input type="radio" id="15_c" name="15" value="в"><label for="15_c">в) необходим, чтобы показать рандомные 10 записей в запрос</label></div>
+        <div class="styled-input-single"><input type="radio" id="15_d" name="15" value="г"><label for="15_d">г) не существует такого оператора</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">16. Что такое агрегирующие функции:</p>
-        <p><input type="radio" id="16_a" name="16" value="а">а) функции, которые фильтруют значения</p>
-        <p><input type="radio" id="16_b" name="16" value="б">б)	функции, которые сортируют значения</p>
-        <p><input type="radio" id="16_c" name="16" value="в">в) функции, которые работают с набором данных, превращая их в одно итоговое значение</p>
-        <p><input type="radio" id="16_d" name="16" value="г">г) функции, которые суммируют все значения</p>
+        <div class="styled-input-single"><input type="radio" id="16_a" name="16" value="а"><label for="16_a">а) функции, которые фильтруют значения</label></div>
+        <div class="styled-input-single"><input type="radio" id="16_b" name="16" value="б"><label for="16_b">б)	функции, которые сортируют значения</label></div>
+        <div class="styled-input-single"><input type="radio" id="16_c" name="16" value="в"><label for="16_c">в) функции, которые работают с набором данных, превращая их в одно итоговое значение</label></div>
+        <div class="styled-input-single"><input type="radio" id="16_d" name="16" value="г"><label for="16_d">г) функции, которые суммируют все значения</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">17. Выберите пример правильно составленного запроса с использованием агрегирующей функции SUM:</p>
-        <p><input type="radio" id="17_a" name="17" value="а">а)	select sum(price) from Orders;</p>
-        <p><input type="radio" id="17_b" name="17" value="б">б)	select sum(price), customer_name from Orders;</p>
-        <p><input type="radio" id="17_c" name="17" value="в">в)	select * from Orders where price=sum();</p>
-        <p><input type="radio" id="17_d" name="17" value="г">г)	select sum() from Orders group by price desc;</p>
+        <div class="styled-input-single"><input type="radio" id="17_a" name="17" value="а"><label for="17_a">а)	select sum(price) from Orders;</label></div>
+        <div class="styled-input-single"><input type="radio" id="17_b" name="17" value="б"><label for="17_b">б)	select sum(price), customer_name from Orders;</label></div>
+        <div class="styled-input-single"><input type="radio" id="17_c" name="17" value="в"><label for="17_c">в)	select * from Orders where price=sum();</label></div>
+        <div class="styled-input-single"><input type="radio" id="17_d" name="17" value="г"><label for="17_d">г)	select sum() from Orders group by price desc;</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">18.	Возможно ли использование одновременно двух агрегирующих функций:</p>
         <p class="questionCode">select min(price), max(price) from Orders;</p>
-        <p><input type="radio" id="18_a" name="18" value="а">а)	да, но данный запрос составлен неверно, надо так: select * from Orders where price IN (min, max);</p>
-        <p><input type="radio" id="18_b" name="18" value="б">б)	да, в результате мы получим минимальную и максимальную стоимости</p>
-        <p><input type="radio" id="18_c" name="18" value="в">в)	да, в результате мы получим стоимости, отсортированные от минимальной к максимальной</p>
-        <p><input type="radio" id="18_d" name="18" value="г">г)	нет, две функции использовать одновременно нельзя</p>
+        <div class="styled-input-single"><input type="radio" id="18_a" name="18" value="а"><label for="18_a">а)	да, но данный запрос составлен неверно, надо так: select * from Orders where price IN (min, max);</label></div>
+        <div class="styled-input-single"><input type="radio" id="18_b" name="18" value="б"><label for="18_b">б)	да, в результате мы получим минимальную и максимальную стоимости</label></div>
+        <div class="styled-input-single"><input type="radio" id="18_c" name="18" value="в"><label for="18_c">в)	да, в результате мы получим стоимости, отсортированные от минимальной к максимальной</label></div>
+        <div class="styled-input-single"><input type="radio" id="18_d" name="18" value="г"><label for="18_d">г)	нет, две функции использовать одновременно нельзя</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">19. Выберите корректно составленный запрос с функцией GROUP BY:</p>
-        <p><input type="radio" id="19_a" name="19" value="а">а) select count(*) from Orders GROUP seller_id;</p>
-        <p><input type="radio" id="19_b" name="19" value="б">б) select seller_id, count(*) from Orders GROUP seller_id;</p>
-        <p><input type="radio" id="19_c" name="19" value="в">в) select seller_id, count(*) from Orders GROUP BY seller_id;</p>
-        <p><input type="radio" id="19_d" name="19" value="г">г) select count(*) from Orders GROUP ON seller_id;</p>
+        <div class="styled-input-single"><input type="radio" id="19_a" name="19" value="а"><label for="19_a">а) select count(*) from Orders GROUP seller_id;</label></div>
+        <div class="styled-input-single"><input type="radio" id="19_b" name="19" value="б"><label for="19_b">б) select seller_id, count(*) from Orders GROUP seller_id;</label></div>
+        <div class="styled-input-single"><input type="radio" id="19_c" name="19" value="в"><label for="19_c">в) select seller_id, count(*) from Orders GROUP BY seller_id;</label></div>
+        <div class="styled-input-single"><input type="radio" id="19_d" name="19" value="г"><label for="19_d">г) select count(*) from Orders GROUP ON seller_id;</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">20.	Что покажет следующий запрос:</p>
         <p class="questionCode">select seller_id, count(*) from Orders GROUP BY seller_id HAVING seller_id IN (2,4,6);</p>
-        <p><input type="radio" id="20_a" name="20" value="а">а) количество заказов сгруппированное по продавцам 2, 4 и 6</p>
-        <p><input type="radio" id="20_b" name="20" value="б">б)	количество продавцов, у которых 2, 4 или 6 товаров</p>
-        <p><input type="radio" id="20_c" name="20" value="в">в)	ничего, запрос составлен неверно, HAVING указывается до группировки</p>
-        <p><input type="radio" id="20_d" name="20" value="г">г)	ничего, запрос составлен неверно, для указания условия должно быть использовано WHERE</p>
+        <div class="styled-input-single"><input type="radio" id="20_a" name="20" value="а"><label for="20_a">а) количество заказов сгруппированное по продавцам 2, 4 и 6</label></div>
+        <div class="styled-input-single"><input type="radio" id="20_b" name="20" value="б"><label for="20_b">б)	количество продавцов, у которых 2, 4 или 6 товаров</label></div>
+        <div class="styled-input-single"><input type="radio" id="20_c" name="20" value="в"><label for="20_c">в)	ничего, запрос составлен неверно, HAVING указывается до группировки</label></div>
+        <div class="styled-input-single"><input type="radio" id="20_d" name="20" value="г"><label for="20_d">г)	ничего, запрос составлен неверно, для указания условия должно быть использовано WHERE</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">21.	Выберите пример корректно написанного запроса с использованием подзапроса, который выводит информацию о заказе с самой дорогой стоимостью:</p>
-        <p><input type="radio" id="21_a" name="21" value="а">а)	select * from Orders where price = (select big(price) from Orders)</p>
-        <p><input type="radio" id="21_b" name="21" value="б">б)	select * from Orders where price = max</p>
-        <p><input type="radio" id="21_c" name="21" value="в">в)	select count(*) from Orders</p>
-        <p><input type="radio" id="21_d" name="21" value="г">г)	select * from Orders where price = (select max(price) from Orders)</p>
+        <div class="styled-input-single"><input type="radio" id="21_a" name="21" value="а"><label for="21_a">а)	select * from Orders where price = (select big(price) from Orders)</label></div>
+        <div class="styled-input-single"><input type="radio" id="21_b" name="21" value="б"><label for="21_b">б)	select * from Orders where price = max</label></div>
+        <div class="styled-input-single"><input type="radio" id="21_c" name="21" value="в"><label for="21_c">в)	select count(*) from Orders</label></div>
+        <div class="styled-input-single"><input type="radio" id="21_d" name="21" value="г"><label for="21_d">г)	select * from Orders where price = (select max(price) from Orders)</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">22.	Что такое JOIN:</p>
-        <p><input type="radio" id="22_a" name="22" value="а">а)	операция объединения</p>
-        <p><input type="radio" id="22_b" name="22" value="б">б)	операция группировки</p>
-        <p><input type="radio" id="22_c" name="22" value="в">в)	операция суммирования</p>
-        <p><input type="radio" id="22_d" name="22" value="г">г)	операция создания</p>
+        <div class="styled-input-single"><input type="radio" id="22_a" name="22" value="а"><label for="22_a">а)	операция объединения</label></div>
+        <div class="styled-input-single"><input type="radio" id="22_b" name="22" value="б"><label for="22_b">б)	операция группировки</label></div>
+        <div class="styled-input-single"><input type="radio" id="22_c" name="22" value="в"><label for="22_c">в)	операция суммирования</label></div>
+        <div class="styled-input-single"><input type="radio" id="22_d" name="22" value="г"><label for="22_d">г)	операция создания</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">23.	Какого из перечисленных ниже видов JOIN на самом деле не существует:</p>
-        <p><input type="radio" id="23_a" name="23" value="а">а)	LEFT JOIN - который выведет все записи первой таблицы, а для ненайденных пар из правой таблицы проставит значение NULL</p>
-        <p><input type="radio" id="23_b" name="23" value="б">б)	RIGHT JOIN - который выведет все записи второй таблицы, а на место недостающей информации из первой таблицы проставит NULL</p>
-        <p><input type="radio" id="23_c" name="23" value="в">в)	INNER JOIN - который показывает только те записи, для которых нашлись пары</p>
-        <p><input type="radio" id="23_d" name="23" value="г">г)	TRUE JOIN - который выведет все верные значения</p>
+        <div class="styled-input-single"><input type="radio" id="23_a" name="23" value="а"><label for="23_a">а)	LEFT JOIN - который выведет все записи первой таблицы, а для ненайденных пар из правой таблицы проставит значение NULL</label></div>
+        <div class="styled-input-single"><input type="radio" id="23_b" name="23" value="б"><label for="23_b">б)	RIGHT JOIN - который выведет все записи второй таблицы, а на место недостающей информации из первой таблицы проставит NULL</label></div>
+        <div class="styled-input-single"><input type="radio" id="23_c" name="23" value="в"><label for="23_c">в)	INNER JOIN - который показывает только те записи, для которых нашлись пары</label></div>
+        <div class="styled-input-single"><input type="radio" id="23_d" name="23" value="г"><label for="23_d">г)	TRUE JOIN - который выведет все верные значения</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">24.	Выберите корректный пример составленного запроса с использованием JOIN. Данный запрос выведет нам данные ID заказа, имя заказчика и продавца:</p>
-        <p><input type="radio" id="24_a" name="24" value="а">а)	select Orders.id, Orders.customer_name, Sellers.id from Orders LEFT JOIN ON Sellers AND Orders.seller_id = Sellers.id;</p>
-        <p><input type="radio" id="24_b" name="24" value="б">б)	select id AND customer_name AND seller_id from Orders LEFT JOIN Sellers ON seller_id = id;</p>
-        <p><input type="radio" id="24_c" name="24" value="в">в)	select Orders.id, Orders.customer_name, Sellers.id from Orders LEFT JOIN Sellers ON Orders.seller_id = Sellers.id;</p>
-        <p><input type="radio" id="24_d" name="24" value="г">г)	select Orders.id, Orders.customer_name, Sellers.id from Orders JOIN Sellers WHEN Orders.seller_id = Sellers.id;</p>
+        <div class="styled-input-single"><input type="radio" id="24_a" name="24" value="а"><label for="24_a">а)	select Orders.id, Orders.customer_name, Sellers.id from Orders LEFT JOIN ON Sellers AND Orders.seller_id = Sellers.id;</label></div>
+        <div class="styled-input-single"><input type="radio" id="24_b" name="24" value="б"><label for="24_b">б)	select id AND customer_name AND seller_id from Orders LEFT JOIN Sellers ON seller_id = id;</label></div>
+        <div class="styled-input-single"><input type="radio" id="24_c" name="24" value="в"><label for="24_c">в)	select Orders.id, Orders.customer_name, Sellers.id from Orders LEFT JOIN Sellers ON Orders.seller_id = Sellers.id;</label></div>
+        <div class="styled-input-single"><input type="radio" id="24_d" name="24" value="г"><label for="24_d">г)	select Orders.id, Orders.customer_name, Sellers.id from Orders JOIN Sellers WHEN Orders.seller_id = Sellers.id;</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">25.	Выберите правильный пример запроса с использованием UNION:</p>
-        <p><input type="radio" id="25_a" name="25" value="а">а)	select id, city from Orders order by id union select id, city from Sellers order by city;</p>
-        <p><input type="radio" id="25_b" name="25" value="б">б)	select id, city, seller_id from Orders and select city, id from Sellers order by id;</p>
-        <p><input type="radio" id="25_c" name="25" value="в">в)	select id, city from Orders union select id, city from Sellers order by id;</p>
-        <p><input type="radio" id="25_d" name="25" value="г">г)	Все запросы верные</p>
+        <div class="styled-input-single"><input type="radio" id="25_a" name="25" value="а"><label for="25_a">а)	select id, city from Orders order by id union select id, city from Sellers order by city;</label></div>
+        <div class="styled-input-single"><input type="radio" id="25_b" name="25" value="б"><label for="25_b">б)	select id, city, seller_id from Orders and select city, id from Sellers order by id;</label></div>
+        <div class="styled-input-single"><input type="radio" id="25_c" name="25" value="в"><label for="25_c">в)	select id, city from Orders union select id, city from Sellers order by id;</label></div>
+        <div class="styled-input-single"><input type="radio" id="25_d" name="25" value="г"><label for="25_d">г)	Все запросы верные</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">26.	Какого строкового типа данных нет в SQL:</p>
-        <p><input type="radio" id="26_a" name="26" value="а">а)	VARCHAR</p>
-        <p><input type="radio" id="26_b" name="26" value="б">б)	STRING</p>
-        <p><input type="radio" id="26_c" name="26" value="в">в)	CHAR</p>
-        <p><input type="radio" id="26_d" name="26" value="г">г)	TEXT </p>
+        <div class="styled-input-single"><input type="radio" id="26_a" name="26" value="а"><label for="26_a">а)	VARCHAR</label></div>
+        <div class="styled-input-single"><input type="radio" id="26_b" name="26" value="б"><label for="26_b">б)	STRING</label></div>
+        <div class="styled-input-single"><input type="radio" id="26_c" name="26" value="в"><label for="26_c">в)	CHAR</label></div>
+        <div class="styled-input-single"><input type="radio" id="26_d" name="26" value="г"><label for="26_d">г)	TEXT </label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">27.	Чем отличается CHAR и VARCHAR?</p>
-        <p><input type="radio" id="27_a" name="27" value="а">а)	Это одно и то же</p>
-        <p><input type="radio" id="27_b" name="27" value="б">б)	VARCHAR не существует</p>
-        <p><input type="radio" id="27_c" name="27" value="в">в)	CHAR - это тип данных, а VARCHAR – подтип</p>
-        <p><input type="radio" id="27_d" name="27" value="г">г)	CHAR дополняет строку пробелами до максимальной длины, а VARCHAR тратит лишнюю память на хранение значения длины строки</p>
+        <div class="styled-input-single"><input type="radio" id="27_a" name="27" value="а"><label for="27_a">а)	Это одно и то же</label></div>
+        <div class="styled-input-single"><input type="radio" id="27_b" name="27" value="б"><label for="27_b">б)	VARCHAR не существует</label></div>
+        <div class="styled-input-single"><input type="radio" id="27_c" name="27" value="в"><label for="27_c">в)	CHAR - это тип данных, а VARCHAR – подтип</label></div>
+        <div class="styled-input-single"><input type="radio" id="27_d" name="27" value="г"><label for="27_d">г)	CHAR дополняет строку пробелами до максимальной длины, а VARCHAR тратит лишнюю память на хранение значения длины строки</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">28.	Как получить значение текущего года в SQL?</p>
-        <p><input type="radio" id="28_a" name="28" value="а">а)	select now();</p>
-        <p><input type="radio" id="28_b" name="28" value="б">б)	select year();</p>
-        <p><input type="radio" id="28_c" name="28" value="в">в)	select year(now());</p>
-        <p><input type="radio" id="28_d" name="28" value="г">г)	select year from Date;</p>
+        <div class="styled-input-single"><input type="radio" id="28_a" name="28" value="а"><label for="28_a">а)	select now();</label></div>
+        <div class="styled-input-single"><input type="radio" id="28_b" name="28" value="б"><label for="28_b">б)	select year();</label></div>
+        <div class="styled-input-single"><input type="radio" id="28_c" name="28" value="в"><label for="28_c">в)	select year(now());</label></div>
+        <div class="styled-input-single"><input type="radio" id="28_d" name="28" value="г"><label for="28_d">г)	select year from Date;</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">29.	Как правильно добавить строку в таблицу? Какой запрос верный?</p>
-        <p><input type="radio" id="29_a" name="29" value="а">а)	INSERT INTO SimpleTable (some_text) VALUES ('my text');</p>
-        <p><input type="radio" id="29_b" name="29" value="б">б)	INSERT INTO SimpleTable SET some_text='my text';</p>
-        <p><input type="radio" id="29_c" name="29" value="в">в)	SET INTO SimpleTable VALUE some_text='my text';</p>
-        <p><input type="radio" id="29_d" name="29" value="г">г)	UPDATE INTO SimpleTable SET some_text='my text';</p>
+        <div class="styled-input-single"><input type="radio" id="29_a" name="29" value="а"><label for="29_a">а)	INSERT INTO SimpleTable (some_text) VALUES ('my text');</label></div>
+        <div class="styled-input-single"><input type="radio" id="29_b" name="29" value="б"><label for="29_b">б)	INSERT INTO SimpleTable SET some_text='my text';</label></div>
+        <div class="styled-input-single"><input type="radio" id="29_c" name="29" value="в"><label for="29_c">в)	SET INTO SimpleTable VALUE some_text='my text';</label></div>
+        <div class="styled-input-single"><input type="radio" id="29_d" name="29" value="г"><label for="29_d">г)	UPDATE INTO SimpleTable SET some_text='my text';</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">30.	Какие поля из таблицы обязательно перечислять в INSERT для вставки данных?</p>
-        <p><input type="radio" id="30_a" name="30" value="а">а)	Конечно все</p>
-        <p><input type="radio" id="30_b" name="30" value="б">б)	Только те, у которых нет DEFAULT значения</p>
-        <p><input type="radio" id="30_c" name="30" value="в">в)	Те, у которых нет DEFAULT значения и которые не имеют атрибут auto_increment</p>
-        <p><input type="radio" id="30_d" name="30" value="г">г)	Все поля имеют негласное DEFAULT значения, обязательных полей в SQL нет</p>
+        <div class="styled-input-single"><input type="radio" id="30_a" name="30" value="а"><label for="30_a">а)	Конечно все</label></div>
+        <div class="styled-input-single"><input type="radio" id="30_b" name="30" value="б"><label for="30_b">б)	Только те, у которых нет DEFAULT значения</label></div>
+        <div class="styled-input-single"><input type="radio" id="30_c" name="30" value="в"><label for="30_c">в)	Те, у которых нет DEFAULT значения и которые не имеют атрибут auto_increment</label></div>
+        <div class="styled-input-single"><input type="radio" id="30_d" name="30" value="г"><label for="30_d">г)	Все поля имеют негласное DEFAULT значения, обязательных полей в SQL нет</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">31.	Как сделать несколько записей в таблицу за один запрос?</p>
-        <p><input type="radio" id="31_a" name="31" value="а">а)	Использовать MULTI INSERT INTO вместо INSERT INTO</p>
-        <p><input type="radio" id="31_b" name="31" value="б">б)	Использовать подзапрос</p>
-        <p><input type="radio" id="31_c" name="31" value="в">в)	Перечислить через запятую все наборы значений после VALUES</p>
-        <p><input type="radio" id="31_d" name="31" value="г">г)	Никак, расходимся по домам</p>
+        <div class="styled-input-single"><input type="radio" id="31_a" name="31" value="а"><label for="31_a">а)	Использовать MULTI INSERT INTO вместо INSERT INTO</label></div>
+        <div class="styled-input-single"><input type="radio" id="31_b" name="31" value="б"><label for="31_b">б)	Использовать подзапрос</label></div>
+        <div class="styled-input-single"><input type="radio" id="31_c" name="31" value="в"><label for="31_c">в)	Перечислить через запятую все наборы значений после VALUES</label></div>
+        <div class="styled-input-single"><input type="radio" id="31_d" name="31" value="г"><label for="31_d">г)	Никак, расходимся по домам</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">32.	Зачем существует команда UPDATE, если можно сначала удалить запись, а потом добавить новую, исправленную.</p>
-        <p><input type="radio" id="32_a" name="32" value="а">а)	Именно так и делаю, UPDATE не использую</p>
-        <p><input type="radio" id="32_b" name="32" value="б">б)	Так меньше нагрузки на базу, ведь команда одна, а не две</p>
-        <p><input type="radio" id="32_c" name="32" value="в">в)	Потому что в записи могут быть автоматически проставляемые поля, такие как auto_increment или timestamp, которые собьются при внесении записи заново</p>
-        <p><input type="radio" id="32_d" name="32" value="г">г)	Как раз удалять записи в SQL нельзя, вместо этого используется UPDATE с NULL-значениями для всех полей</p>
+        <div class="styled-input-single"><input type="radio" id="32_a" name="32" value="а"><label for="32_a">а)	Именно так и делаю, UPDATE не использую</label></div>
+        <div class="styled-input-single"><input type="radio" id="32_b" name="32" value="б"><label for="32_b">б)	Так меньше нагрузки на базу, ведь команда одна, а не две</label></div>
+        <div class="styled-input-single"><input type="radio" id="32_c" name="32" value="в"><label for="32_c">в)	Потому что в записи могут быть автоматически проставляемые поля, такие как auto_increment или timestamp, которые собьются при внесении записи заново</label></div>
+        <div class="styled-input-single"><input type="radio" id="32_d" name="32" value="г"><label for="32_d">г)	Как раз удалять записи в SQL нельзя, вместо этого используется UPDATE с NULL-значениями для всех полей</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">33.	В каких командах можно использовать LIMIT?</p>
-        <p><input type="radio" id="33_a" name="33" value="а">а)	Только Select</p>
-        <p><input type="radio" id="33_b" name="33" value="б">б)	Select и Insert</p>
-        <p><input type="radio" id="33_c" name="33" value="в">в)	Select, Update, Delete</p>
-        <p><input type="radio" id="33_d" name="33" value="г">г)	Select, Insert, Delete, Update</p>
+        <div class="styled-input-single"><input type="radio" id="33_a" name="33" value="а"><label for="33_a">а)	Только Select</label></div>
+        <div class="styled-input-single"><input type="radio" id="33_b" name="33" value="б"><label for="33_b">б)	Select и Insert</label></div>
+        <div class="styled-input-single"><input type="radio" id="33_c" name="33" value="в"><label for="33_c">в)	Select, Update, Delete</label></div>
+        <div class="styled-input-single"><input type="radio" id="33_d" name="33" value="г"><label for="33_d">г)	Select, Insert, Delete, Update</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">34.	Как можно заранее узнать, какие записи будут удалены при выполнении DELETE?</p>
-        <p><input type="radio" id="34_a" name="34" value="а">а)	Зачем заранее, просто вызвать его и посмотреть какие записи пропали</p>
-        <p><input type="radio" id="34_b" name="34" value="б">б)	Заменить DELETE на SELECT *, ведь в остальном синтаксис DELETE похож на синтаксис простого SELECT</p>
-        <p><input type="radio" id="34_c" name="34" value="в">в)	Сделать DELETE с LIMIT 1, одну запись не жалко</p>
-        <p><input type="radio" id="34_d" name="34" value="г">г)	SQL создан для хранения данных, их нельзя удалять</p>
+        <div class="styled-input-single"><input type="radio" id="34_a" name="34" value="а"><label for="34_a">а)	Зачем заранее, просто вызвать его и посмотреть какие записи пропали</label></div>
+        <div class="styled-input-single"><input type="radio" id="34_b" name="34" value="б"><label for="34_b">б)	Заменить DELETE на SELECT *, ведь в остальном синтаксис DELETE похож на синтаксис простого SELECT</label></div>
+        <div class="styled-input-single"><input type="radio" id="34_c" name="34" value="в"><label for="34_c">в)	Сделать DELETE с LIMIT 1, одну запись не жалко</label></div>
+        <div class="styled-input-single"><input type="radio" id="34_d" name="34" value="г"><label for="34_d">г)	SQL создан для хранения данных, их нельзя удалять</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">35.	Какой командой можно создать новую таблицу?</p>
-        <p><input type="radio" id="35_a" name="35" value="а">а) CREATE TABLE</p>
-        <p><input type="radio" id="35_b" name="35" value="б">б) MAKE TABLE</p>
-        <p><input type="radio" id="35_c" name="35" value="в">в) SET TABLE</p>
-        <p><input type="radio" id="35_d" name="35" value="г">г) Создавать таблицы можно только через интерфейс СУБД, специальной SQL команды для этого нет</p>
+        <div class="styled-input-single"><input type="radio" id="35_a" name="35" value="а"><label for="35_a">а) CREATE TABLE</label></div>
+        <div class="styled-input-single"><input type="radio" id="35_b" name="35" value="б"><label for="35_b">б) MAKE TABLE</label></div>
+        <div class="styled-input-single"><input type="radio" id="35_c" name="35" value="в"><label for="35_c">в) SET TABLE</label></div>
+        <div class="styled-input-single"><input type="radio" id="35_d" name="35" value="г"><label for="35_d">г) Создавать таблицы можно только через интерфейс СУБД, специальной SQL команды для этого нет</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">36.	Можно ли поменять тип данных поля в уже существующей таблице?</p>
-        <p><input type="radio" id="36_a" name="36" value="а">а)	Да, при помощи команды ALTER</p>
-        <p><input type="radio" id="36_b" name="36" value="б">б)	Да, достаточно сделать INSERT с новым типом данных</p>
-        <p><input type="radio" id="36_c" name="36" value="в">в)	Нет, только пересоздать таблицу</p>
-        <p><input type="radio" id="36_d" name="36" value="г">г)	Тип бывает только у таблицы, а не у поля таблицы</p>
+        <div class="styled-input-single"><input type="radio" id="36_a" name="36" value="а"><label for="36_a">а)	Да, при помощи команды ALTER</label></div>
+        <div class="styled-input-single"><input type="radio" id="36_b" name="36" value="б"><label for="36_b">б)	Да, достаточно сделать INSERT с новым типом данных</label></div>
+        <div class="styled-input-single"><input type="radio" id="36_c" name="36" value="в"><label for="36_c">в)	Нет, только пересоздать таблицу</label></div>
+        <div class="styled-input-single"><input type="radio" id="36_d" name="36" value="г"><label for="36_d">г)	Тип бывает только у таблицы, а не у поля таблицы</label></div>
     </div>
 
     <div class="qBlock question">Python</div>
 
     <div class="qBlock">
         <p class="question">37.	Что такое тип данных dict?</p>
-        <p><input type="radio" id="37_a" name="37" value="а">а) Целое число</p>
-        <p><input type="radio" id="37_b" name="37" value="б">б)	Массив</p>
-        <p><input type="radio" id="37_c" name="37" value="в">в)	Словарь</p>
-        <p><input type="radio" id="37_d" name="37" value="г">г)	Строка</p>
+        <div class="styled-input-single"><input type="radio" id="37_a" name="37" value="а"><label for="37_a">а) Целое число</label></div>
+        <div class="styled-input-single"><input type="radio" id="37_b" name="37" value="б"><label for="37_b">б)	Массив</label></div>
+        <div class="styled-input-single"><input type="radio" id="37_c" name="37" value="в"><label for="37_c">в)	Словарь</label></div>
+        <div class="styled-input-single"><input type="radio" id="37_d" name="37" value="г"><label for="37_d">г)	Строка</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">38.	Что означает оператор **?</p>
-        <p><input type="radio" id="38_a" name="38" value="а">а) Умножить два раза</p>
-        <p><input type="radio" id="38_b" name="38" value="б">б)	Пропустить</p>
-        <p><input type="radio" id="38_c" name="38" value="в">в)	Разделить</p>
-        <p><input type="radio" id="38_d" name="38" value="г">г)	Возвести в степень</p>
+        <div class="styled-input-single"><input type="radio" id="38_a" name="38" value="а"><label for="38_a">а) Умножить два раза</label></div>
+        <div class="styled-input-single"><input type="radio" id="38_b" name="38" value="б"><label for="38_b">б)	Пропустить</label></div>
+        <div class="styled-input-single"><input type="radio" id="38_c" name="38" value="в"><label for="38_c">в)	Разделить</label></div>
+        <div class="styled-input-single"><input type="radio" id="38_d" name="38" value="г"><label for="38_d">г)	Возвести в степень</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">39.	Что такое if?</p>
-        <p><input type="radio" id="39_a" name="39" value="а">а)	Выполнить многократно</p>
-        <p><input type="radio" id="39_b" name="39" value="б">б)	Пропустить выполнение блока кода в if</p>
-        <p><input type="radio" id="39_c" name="39" value="в">в)	Выполнить определенный блок кода при определенном условии</p>
-        <p><input type="radio" id="39_d" name="39" value="г">г)	Пропустить блок кода</p>
+        <div class="styled-input-single"><input type="radio" id="39_a" name="39" value="а"><label for="39_a">а)	Выполнить многократно</label></div>
+        <div class="styled-input-single"><input type="radio" id="39_b" name="39" value="б"><label for="39_b">б)	Пропустить выполнение блока кода в if</label></div>
+        <div class="styled-input-single"><input type="radio" id="39_c" name="39" value="в"><label for="39_c">в)	Выполнить определенный блок кода при определенном условии</label></div>
+        <div class="styled-input-single"><input type="radio" id="39_d" name="39" value="г"><label for="39_d">г)	Пропустить блок кода</label></div>
     </div>
 
     <div class="qBlock">
@@ -344,18 +344,18 @@
             string = "Hello World!"</br>
             print(string[:-2])
         </p>
-        <p><input type="radio" id="40_a" name="40" value="а">а)	последние два символа</p>
-        <p><input type="radio" id="40_b" name="40" value="б">б)	ошибку</p>
-        <p><input type="radio" id="40_c" name="40" value="в">в)	все, кроме последних двух символов</p>
-        <p><input type="radio" id="40_d" name="40" value="г">г)	строку полностью</p>
+        <div class="styled-input-single"><input type="radio" id="40_a" name="40" value="а"><label for="40_a">а)	последние два символа</label></div>
+        <div class="styled-input-single"><input type="radio" id="40_b" name="40" value="б"><label for="40_b">б)	ошибку</label></div>
+        <div class="styled-input-single"><input type="radio" id="40_c" name="40" value="в"><label for="40_c">в)	все, кроме последних двух символов</label></div>
+        <div class="styled-input-single"><input type="radio" id="40_d" name="40" value="г"><label for="40_d">г)	строку полностью</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">41.	Когда выполняется цикл while?</p>
-        <p><input type="radio" id="41_a" name="41" value="а">а)	Всегда</p>
-        <p><input type="radio" id="41_b" name="41" value="б">б)	Всегда написано выражение if перед циклом</p>
-        <p><input type="radio" id="41_c" name="41" value="в">в)	Это не цикл</p>
-        <p><input type="radio" id="41_d" name="41" value="г">г)	Если выражение в условии цикла истинно(True), то выполняется “Блок кода” написанный в цикле</p>
+        <div class="styled-input-single"><input type="radio" id="41_a" name="41" value="а"><label for="41_a">а)	Всегда</label></div>
+        <div class="styled-input-single"><input type="radio" id="41_b" name="41" value="б"><label for="41_b">б)	Всегда написано выражение if перед циклом</label></div>
+        <div class="styled-input-single"><input type="radio" id="41_c" name="41" value="в"><label for="41_c">в)	Это не цикл</label></div>
+        <div class="styled-input-single"><input type="radio" id="41_d" name="41" value="г"><label for="41_d">г)	Если выражение в условии цикла истинно(True), то выполняется “Блок кода” написанный в цикле</label></div>
     </div>
 
     <div class="qBlock">
@@ -365,62 +365,62 @@
             b = a + 10</br>
             print(b)
         </p>
-        <p><input type="radio" id="42_a" name="42" value="а">а)	10</p>
-        <p><input type="radio" id="42_b" name="42" value="б">б)	5</p>
-        <p><input type="radio" id="42_c" name="42" value="в">в)	20</p>
-        <p><input type="radio" id="42_d" name="42" value="г">г)	30</p>
+        <div class="styled-input-single"><input type="radio" id="42_a" name="42" value="а"><label for="42_a">а)	10</label></div>
+        <div class="styled-input-single"><input type="radio" id="42_b" name="42" value="б"><label for="42_b">б)	5</label></div>
+        <div class="styled-input-single"><input type="radio" id="42_c" name="42" value="в"><label for="42_c">в)	20</label></div>
+        <div class="styled-input-single"><input type="radio" id="42_d" name="42" value="г"><label for="42_d">г)	30</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">43.	В каком виде представлены данные в Python?</p>
-        <p><input type="radio" id="43_a" name="43" value="а">а)	В виде массивов</p>
-        <p><input type="radio" id="43_b" name="43" value="б">б)	В виде функций</p>
-        <p><input type="radio" id="43_c" name="43" value="в">в)	В виде объектов</p>
-        <p><input type="radio" id="43_d" name="43" value="г">г)	В двоичном виде</p>
+        <div class="styled-input-single"><input type="radio" id="43_a" name="43" value="а"><label for="43_a">а)	В виде массивов</label></div>
+        <div class="styled-input-single"><input type="radio" id="43_b" name="43" value="б"><label for="43_b">б)	В виде функций</label></div>
+        <div class="styled-input-single"><input type="radio" id="43_c" name="43" value="в"><label for="43_c">в)	В виде объектов</label></div>
+        <div class="styled-input-single"><input type="radio" id="43_d" name="43" value="г"><label for="43_d">г)	В двоичном виде</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">44.	Что является списками?</p>
-        <p><input type="radio" id="44_a" name="44" value="а">а) Переменные, заключенные в фигурные скобки</p>
-        <p><input type="radio" id="44_b" name="44" value="б">б) Упорядоченные, неограниченные по размеру коллекции объектов произвольных типов</p>
-        <p><input type="radio" id="44_c" name="44" value="в">в) Переменные, разделенные точкой</p>
+        <div class="styled-input-single"><input type="radio" id="44_a" name="44" value="а"><label for="44_a">а) Переменные, заключенные в фигурные скобки</label></div>
+        <div class="styled-input-single"><input type="radio" id="44_b" name="44" value="б"><label for="44_b">б) Упорядоченные, неограниченные по размеру коллекции объектов произвольных типов</label></div>
+        <div class="styled-input-single"><input type="radio" id="44_c" name="44" value="в"><label for="44_c">в) Переменные, разделенные точкой</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">45.	Как получить элемент из списка?</p>
-        <p><input type="radio" id="45_a" name="45" value="а">а)	По ключу</p>
-        <p><input type="radio" id="45_b" name="45" value="б">б)	По индексу</p>
-        <p><input type="radio" id="45_c" name="45" value="в">в)	С помощью метода .get()</p>
+        <div class="styled-input-single"><input type="radio" id="45_a" name="45" value="а"><label for="45_a">а)	По ключу</label></div>
+        <div class="styled-input-single"><input type="radio" id="45_b" name="45" value="б"><label for="45_b">б)	По индексу</label></div>
+        <div class="styled-input-single"><input type="radio" id="45_c" name="45" value="в"><label for="45_c">в)	С помощью метода .get()</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">46.	Какой метод позволит получить от словаря сразу и ключ и значение?</p>
-        <p><input type="radio" id="46_a" name="46" value="а">а) key_values()</p>
-        <p><input type="radio" id="46_b" name="46" value="б">б)	.items()</p>
-        <p><input type="radio" id="46_c" name="46" value="в">в)	Нет такого метода</p>
+        <div class="styled-input-single"><input type="radio" id="46_a" name="46" value="а"><label for="46_a">а) key_values()</label></div>
+        <div class="styled-input-single"><input type="radio" id="46_b" name="46" value="б"><label for="46_b">б)	.items()</label></div>
+        <div class="styled-input-single"><input type="radio" id="46_c" name="46" value="в"><label for="46_c">в)	Нет такого метода</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">47.	Что такое кортеж?</p>
-        <p><input type="radio" id="47_a" name="47" value="а">а)	Изменяемый список</p>
-        <p><input type="radio" id="47_b" name="47" value="б">б)	Массив списков</p>
-        <p><input type="radio" id="47_c" name="47" value="в">в)	Неизменяемый список</p>
+        <div class="styled-input-single"><input type="radio" id="47_a" name="47" value="а"><label for="47_a">а)	Изменяемый список</label></div>
+        <div class="styled-input-single"><input type="radio" id="47_b" name="47" value="б"><label for="47_b">б)	Массив списков</label></div>
+        <div class="styled-input-single"><input type="radio" id="47_c" name="47" value="в"><label for="47_c">в)	Неизменяемый список</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">48.	Чтобы выйти из цикла, можно использовать команду:</p>
-        <p><input type="radio" id="48_a" name="48" value="а">а)	exit</p>
-        <p><input type="radio" id="48_b" name="48" value="б">б)	caption</p>
-        <p><input type="radio" id="48_c" name="48" value="в">в)	break</p>
-        <p><input type="radio" id="48_d" name="48" value="г">г)	continue</p>
+        <div class="styled-input-single"><input type="radio" id="48_a" name="48" value="а"><label for="48_a">а)	exit</label></div>
+        <div class="styled-input-single"><input type="radio" id="48_b" name="48" value="б"><label for="48_b">б)	caption</label></div>
+        <div class="styled-input-single"><input type="radio" id="48_c" name="48" value="в"><label for="48_c">в)	break</label></div>
+        <div class="styled-input-single"><input type="radio" id="48_d" name="48" value="г"><label for="48_d">г)	continue</label></div>
     </div>
 
     <div class="qBlock">
         <p class="question">49.	Что делает функция len?</p>
-        <p><input type="radio" id="49_a" name="49" value="а">а)	Преобразует строку в нижний регистр</p>
-        <p><input type="radio" id="49_b" name="49" value="б">б)	Она принимает любую последовательность в качестве аргумента и возвращает ее длину</p>
-        <p><input type="radio" id="49_c" name="49" value="в">в)	Очищает строку</p>
-        <p><input type="radio" id="49_d" name="49" value="г">г)	Преобразует строку в верхний регистр</p>
+        <div class="styled-input-single"><input type="radio" id="49_a" name="49" value="а"><label for="49_a">а)	Преобразует строку в нижний регистр</label></div>
+        <div class="styled-input-single"><input type="radio" id="49_b" name="49" value="б"><label for="49_b">б)	Она принимает любую последовательность в качестве аргумента и возвращает ее длину</label></div>
+        <div class="styled-input-single"><input type="radio" id="49_c" name="49" value="в"><label for="49_c">в)	Очищает строку</label></div>
+        <div class="styled-input-single"><input type="radio" id="49_d" name="49" value="г"><label for="49_d">г)	Преобразует строку в верхний регистр</label></div>
     </div>
 
     <div class="qResult">

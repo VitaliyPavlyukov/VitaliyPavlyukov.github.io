@@ -2,6 +2,7 @@ body {
     background: #99b5d0;
     color: black;
     font-optical-sizing: auto;
+    font-size: large;
 }
 
 .title {
@@ -64,6 +65,7 @@ button {
     padding: 10px 15px;
     color:black;
     outline: none;
+    font-size: large;
     cursor: pointer;   
     transition: all 500ms ease;
     box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
@@ -88,4 +90,36 @@ button:hover {
 
 .labelResultText {
     margin-left: 30px;  
+}
+
+.qBlock span {
+    margin-left: 20px;
+}
+
+input[type=radio]:checked + label {   
+  text-indent: 0em; /* here */
+  padding-left: 0.5em; /* and here */
+  margin: 5px 1px 5px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type=radio]:empty + label {
+  text-indent: 0em; /* here */
+  padding-left: 0.5em; /* and here */
+  margin: 5px 1px 5px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.styled-input-single {
+    position: relative;
+    display: inline-flex;
+    min-width: 590px;    
 }
