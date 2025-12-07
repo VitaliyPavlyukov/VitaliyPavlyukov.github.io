@@ -2,7 +2,7 @@ body {
     background: #99b5d0;
     color: black;
     font-optical-sizing: auto;
-    font-size: 26px;
+    font-size: 30px;
 }
 
 html, body {
@@ -22,15 +22,18 @@ body {
 .title {
     font-weight: bold;
     font-size: larger;
-    margin-left:30px;
+    margin-left:0px;
+    display: table;
+    margin: auto;    
 }
 
 .question {
     font-weight:bold;
     background-color: #3c8dbf;
     padding-left: 10px;
-    min-height: 30px;
+    min-height: 0px;
     padding-top: 10px;
+    padding-bottom: 10px;
     vertical-align: middle;
     width: 790px;
     border-radius: 10px;
@@ -39,37 +42,49 @@ body {
 .questionCode {
     font-weight: bold;
     font-style:italic;
-    padding-left: 30px;
+    padding-left: 0px;
     padding-right: 5px;
     border-radius: 10px;
 }
 
 .qBlock {
-    margin-top:30px;
-    margin-left:30px;
+    margin-top: 30px;
+    margin-left: 0px;
     background-color: #4292c4;
     width: 800px;
     padding-left: 2px;
     padding-right: 2px;
     padding-bottom: 5px;
     border-radius: 10px;
-    border: 3px solid #3889bc;
+    border: 3px solid #3889bc;   
     box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
 .info {
     margin-top: 30px;
-    margin-left:30px;
+    margin-left: 0px;    
 }
 
 .info input {
     border-radius: 5px;
+    height: 40px;
+    font-size: 30px;
+    box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
-.qResult {
-    margin-top: 30px;
-    margin-left: 30px;
+.info input:hover {
+    border-radius: 5px;
+    height: 40px;
+    font-size: 30px;
+    box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.qResult {    
+    margin-left: 0px;
     padding-bottom: 30px;
+    display: table;
+    margin: auto;
+    margin-top: 30px;
 }
 
 button {
@@ -79,7 +94,7 @@ button {
     padding: 10px 15px;
     color:black;
     outline: none;
-    font-size: large;
+    font-size: 30px;
     cursor: pointer;   
     transition: all 500ms ease;
     box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
@@ -95,7 +110,7 @@ button:hover {
 .qResultTextarea {
     width: 800px; 
     min-width: 800px;
-    margin-left: 30px;  
+    margin-left: 0px;  
     padding-bottom: 30px;
     border-radius: 10px;
     background-color: #55c37b;
@@ -103,7 +118,7 @@ button:hover {
 }
 
 .labelResultText {
-    margin-left: 30px;  
+    margin-left: 0px;  
 }
 
 .qBlock span {
@@ -112,7 +127,7 @@ button:hover {
 
 input[type=radio]:checked + label {   
   text-indent: 0em; /* here */
-  padding-left: 0.5em; /* and here */
+  padding-left: 0.3em; /* and here */
   margin: 5px 1px 5px;
   cursor: pointer;
   -webkit-user-select: none;
@@ -124,7 +139,7 @@ input[type=radio]:checked + label {
 
 input[type=radio]:empty + label {
   text-indent: 0em; /* here */
-  padding-left: 0.5em; /* and here */
+  padding-left: 0.3em; /* and here */
   margin: 5px 1px 5px;
   cursor: pointer;
   -webkit-user-select: none;
