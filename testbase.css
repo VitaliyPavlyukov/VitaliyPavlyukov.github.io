@@ -23,6 +23,8 @@ body {
     font-weight: bold;
     font-size: larger;
     margin-left:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;    
     display: table;
     margin: auto;    
 }
@@ -62,6 +64,7 @@ body {
 
 .info {
     margin-top: 30px;
+    padding-bottom: 20px;
     margin-left: 0px;    
 }
 
@@ -109,9 +112,11 @@ button:hover {
 
 .qResultTextarea {
     width: 800px; 
+    height: 200px;
     min-width: 800px;
-    margin-left: 0px;  
-    padding-bottom: 30px;
+    margin-left: 0px;    
+    margin-bottom: 30px;
+    font-size: 26px;
     border-radius: 10px;
     background-color: #55c37b;
     box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
