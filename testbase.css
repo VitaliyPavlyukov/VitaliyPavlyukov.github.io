@@ -1,0 +1,86 @@
+body {
+    background: #99b5d0;
+    color: black;
+    font-optical-sizing: auto;
+}
+
+.title {
+    font-weight: bold;
+    font-size: larger;
+    margin-left:30px;
+}
+
+.question {
+    font-weight:bold;
+    background-color: #3c8dbf;
+    padding-left: 10px;
+    min-height: 30px;
+    padding-top: 10px;
+    vertical-align: middle;
+    width: 590px;
+    border-radius: 10px;
+}
+
+.questionCode {
+    font-weight: bold;
+    font-style:italic;
+    padding-left: 30px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+.qBlock {
+    margin-top:30px;
+    margin-left:30px;
+    background-color: #4292c4;
+    width: 600px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.info {
+    margin-top: 30px;
+    margin-left:30px;
+}
+
+.info input {
+    border-radius: 5px;
+}
+
+.qResult {
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+button {
+    border: 1px solid #1d6c39;
+    background-color: #58c47a;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color:black;
+    outline: none;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+button:hover {
+    transition: all 500ms ease;
+    transform: scale(1.05);
+    background-color: #40a15f;
+}
+
+.qResultTextarea {
+    width: 600px; 
+    min-width: 600px;
+    margin-left: 30px;  
+    padding-bottom: 30px;
+    border-radius: 10px;
+    background-color: #55c37b;
+}
+
+.labelResultText {
+    margin-left: 30px;  
+}

@@ -2,28 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Базовый тест ИТ навыков SQL и Python</title>
-    <style>
-        .title {
-            font-weight: bold;
-            font-size:larger;
-        }
-        .question {
-            font-weight:bold;
-        }
-        .questionCode {
-            font-weight: bold;
-            font-style:italic;
-        }
-        .qBlock {
-            margin-top:30px;
-            margin-left:30px;
-        }
-        .info {
-            margin-top: 30px;
-        }        
-    </style>  
-	
+    <title>Базовый тест</title>
+    <link rel="stylesheet" href="testbase.css" />
 </head>
 <body>
     <div class="title">Базовый тест ИТ навыков SQL и Python</div>
@@ -443,8 +423,12 @@
         <p><input type="radio" id="49_d" name="49" value="г">г)	Преобразует строку в верхний регистр</p>
     </div>
 
-    <div class="qBlock">
+    <div class="qResult">
         <button onclick="saveResult()">Сохранить результат</button>
+    </div>    
+    <div>
+        <label class="labelResultText">Выбранные ответы:</label><br>
+        <textarea id="resultText" class="qResultTextarea"></textarea>
     </div>
 
     <script>
@@ -467,9 +451,11 @@
 
         function saveResult() {
             var text = getCheckedValue();
+            document.getElementById('resultText').value = text;
+
             var element = document.createElement('a');
             element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-            element.setAttribute('download', 'result');
+            element.setAttribute('download', 'result.txt');
             element.style.display = 'none';
             document.body.appendChild(element);
             element.click();
@@ -479,7 +465,7 @@
             element2.setAttribute('href', 'mailto:aikimind@mail.ru?subject=Результат Теста&body=' + encodeURIComponent(text));	    
             document.body.appendChild(element2);
             element2.click();
-	    document.body.removeChild(element2);
+	        document.body.removeChild(element2);
         }
 
     </script>
